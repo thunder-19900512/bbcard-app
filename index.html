@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBカード 読み上げアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>BBカード 読み上げアプリ</h1>
+
+    <div id="top-screen">
+        <h2>1. 読み上げるセットを選んでください</h2>
+        <label><input type="checkbox" class="set-checkbox" value="diamond"> ◇ Diamond</label>
+        <label><input type="checkbox" class="set-checkbox" value="heart"> ♡ Heart</label>
+        <label><input type="checkbox" class="set-checkbox" value="club"> ♧ Club</label>
+        <label><input type="checkbox" class="set-checkbox" value="spade"> ♤ Spade</label>
+        <br><br>
+        <button id="start-button">再生開始</button>
+    </div>
+
+    <div id="playback-screen" class="hidden">
+        
+        <button id="home-button">← ホーム画面に戻る</button>
+        <h2>再生中...</h2>
+        <div class="controls">
+            <button id="play-again-button">もう一度流す</button>
+            <button id="next-button">次に進む</button>
+            <button id="continuous-play-button">連続再生</button>
+            <button id="stop-continuous-play-button" class="hidden">連続再生をやめる</button>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
